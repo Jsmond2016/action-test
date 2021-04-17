@@ -2,6 +2,9 @@
 
 github-actions 学习 demo，主要注意几个地方：
 
+
+## 配置相关
+
 - 根目录新建 `.github/workflows` 目录，里面新建 `xxx.yml` 文件，配置参考如下：
 
 ```yml
@@ -40,6 +43,14 @@ module.exports = {
 ```
 
 - 然后，再项目的 `settings` 里面找到 `github-pages` ，配置部署分支即可
+
+## 测试
+
+- 接下来，修改下 src 内某个文件，`push` 后，查看仓库的 `actions` 日志，然后刷新 github page url 查看变更
+
+- 至此，使用 github actions 实现简单的 CI/CD 功能就完成了
+
+
 
 
 相关资料参考：
